@@ -44,12 +44,13 @@ MediaPipe is **not compatible with Python 3.13+**. Install Python 3.10 from [pyt
 
 ### 3. Create a Virtual Environment
 
-````bash
+```bash
 python3.10 -m venv venv
 # Activate it:
 venv\Scripts\activate  # On Windows
 source venv/bin/activate  # On macOS/Linux
 
+```
 
 ### 4. Install Dependencies
 
@@ -59,6 +60,7 @@ Make sure you're inside the virtual environment (you should see `(venv)` at the 
 pip install --upgrade pip
 pip install mediapipe==0.10.9 opencv-python
 
+```
 
 # ⚠️ Common MediaPipe Errors & Fixes
 
@@ -71,7 +73,8 @@ This means MediaPipe failed to load its internal native binaries (DLLs).
 **✅ Fix:**
 
 Install the required Microsoft Visual C++ Runtime:
-* **[Download Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)**
+
+- **[Download Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)**
 
 After installing, restart your computer and try again.
 
@@ -87,7 +90,7 @@ MediaPipe officially supports **Python 3.8 – 3.11**.
 
 1.  Uninstall your current Python version if needed.
 2.  Install a compatible version like Python 3.10 from the official website:
-    * **[https://www.python.org/downloads/release/python-3100/](https://www.python.org/downloads/release/python-3100/)**
+    - **[https://www.python.org/downloads/release/python-3100/](https://www.python.org/downloads/release/python-3100/)**
 
 ---
 
@@ -102,6 +105,8 @@ The correct package name is `opencv-python`:
 ```bash
 pip install opencv-python
 
+```
+
 ### ❌ MediaPipe works on one Python version but fails on another
 
 This happens when you're not running the script in the same environment where you installed the packages.
@@ -111,11 +116,13 @@ This happens when you're not running the script in the same environment where yo
 Ensure you're using the same Python version where MediaPipe was installed. Always activate your virtual environment before running the script:
 
 **Windows:**
+
 ```bash
 venv\Scripts\activate
-
+```
 
 **macOs/Linux:**
+
 ```bash
 source venv/bin/activate
-````
+```
